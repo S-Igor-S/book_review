@@ -9,8 +9,8 @@ class Book extends Model
 {
     use HasFactory;
 
-    public function book()
+    public function review()
     {
-        return $this->belongsTo(Book::class);
+        return $this->hasMany(Review::class);
     }
 }
